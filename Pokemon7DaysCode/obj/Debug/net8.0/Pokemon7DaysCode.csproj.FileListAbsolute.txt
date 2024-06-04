@@ -1,0 +1,17 @@
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.csproj.AssemblyReference.cache
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.AssemblyInfoInputs.cache
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.AssemblyInfo.cs
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.csproj.CoreCompileInputs.cache
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\Pokemon7DaysCode.exe
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\Pokemon7DaysCode.deps.json
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\Pokemon7DaysCode.runtimeconfig.json
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\Pokemon7DaysCode.dll
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\Pokemon7DaysCode.pdb
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\bin\Debug\net8.0\RestSharp.dll
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7.4DD06821.Up2Date
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.dll
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\refint\Pokemon7DaysCode.dll
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.pdb
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.genruntimeconfig.cache
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\ref\Pokemon7DaysCode.dll
