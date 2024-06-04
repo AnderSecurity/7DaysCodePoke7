@@ -1,10 +1,6 @@
 ﻿using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
+using System.Text.Json;
+using Pokemon7DaysCode.Poke7.Models;
 
 namespace Pokemon7DaysCode.Menus
 {
@@ -69,7 +65,14 @@ namespace Pokemon7DaysCode.Menus
 
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        Console.WriteLine(response.Content);
+                        var myPoke7 = JsonSerializer.Deserialize<Poke7.Models.Poke7>(response.Content!);
+
+                        Console.WriteLine($"\nNome do poke7: {myPoke7!.Name}");
+                        Console.WriteLine("\nHabilidades:");
+                        foreach (var ability in myPoke7.Abilities!)
+                        {
+                            Console.WriteLine($"- {ability.abilityDetails.Name}");
+                        }
                     }
                     else
                     {

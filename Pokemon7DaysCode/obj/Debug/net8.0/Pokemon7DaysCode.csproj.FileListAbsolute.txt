@@ -15,3 +15,4 @@ C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemo
 C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.pdb
 C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.genruntimeconfig.cache
 C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\ref\Pokemon7DaysCode.dll
+C:\Users\AnderSecurity\Desktop\-\Anderson\Projetos\Alura\Pokemon7DaysCode\Pokemon7DaysCode\obj\Debug\net8.0\Pokemon7DaysCode.sourcelink.json

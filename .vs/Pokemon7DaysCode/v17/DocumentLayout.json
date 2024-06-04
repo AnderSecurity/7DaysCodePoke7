@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|c:\\users\\andersecurity\\desktop\\-\\anderson\\projetos\\alura\\pokemon7dayscode\\pokemon7dayscode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|solutionrelative:pokemon7dayscode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|c:\\users\\andersecurity\\desktop\\-\\anderson\\projetos\\alura\\pokemon7dayscode\\pokemon7dayscode\\poke7.menus\\choosepoke7menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|solutionrelative:pokemon7dayscode\\poke7.menus\\choosepoke7menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,9 +28,26 @@
               "RelativeDocumentMoniker": "Pokemon7DaysCode\\Program.cs",
               "ToolTip": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Program.cs",
               "RelativeToolTip": "Pokemon7DaysCode\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T19:21:19.019Z",
+              "WhenOpened": "2024-06-04T12:02:42.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChoosePoke7Menu.cs",
+              "DocumentMoniker": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.Menus\\ChoosePoke7Menu.cs",
+              "RelativeDocumentMoniker": "Pokemon7DaysCode\\Poke7.Menus\\ChoosePoke7Menu.cs",
+              "ToolTip": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.Menus\\ChoosePoke7Menu.cs",
+              "RelativeToolTip": "Pokemon7DaysCode\\Poke7.Menus\\ChoosePoke7Menu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T11:59:49.47Z",
               "EditorCaption": ""
             }
           ]

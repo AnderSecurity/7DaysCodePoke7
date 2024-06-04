@@ -38,6 +38,7 @@ while (resposta != '2')
     }
     finally
     {
+        Console.WriteLine();
         Console.WriteLine("Pressione uma tecla para continuar...");
         Console.ReadKey();
     }
