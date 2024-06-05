@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Pokemon7DaysCode.Menus
+﻿namespace Pokemon7DaysCode.Poke7.Menus
 {
     internal class MainMenu : Menu
     {
@@ -26,18 +19,15 @@ namespace Pokemon7DaysCode.Menus
         {
         }
 
-        public override void ShowMenu()
-        {
-            base.ShowMenu();
-        }
-
         public override void MenuFunc()
         {
             Console.WriteLine();
-            Console.WriteLine("Selecione uma das opções abaixo: ");
+            Console.WriteLine($"Bem vindo, {this.UserLogged!.Name}.");
+            Console.WriteLine("\nSelecione uma das opções abaixo: ");
             Console.WriteLine("=============================");
-            Console.WriteLine("1) Selecionar um poke7");
-            Console.WriteLine("2) Sair");
+            Console.WriteLine("1) Adotar um poke7");
+            Console.WriteLine("2) Ver meus mascotes");
+            Console.WriteLine("3) Sair");
             Console.WriteLine("=============================");
 
             Console.Write("\nNúmero da opção desejada: ");

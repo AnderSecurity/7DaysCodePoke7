@@ -6,7 +6,7 @@ namespace Pokemon7DaysCode.Poke7.Models
     internal class Ability
     {
         [JsonPropertyName("ability")]
-        public AbilityDetails abilityDetails { get; set; }
+        public AbilityDetails? abilityDetails { get; set; }
     }
 
     internal class AbilityDetails

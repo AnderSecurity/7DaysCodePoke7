@@ -1,31 +1,36 @@
-﻿using RestSharp;
+﻿using Pokemon7DaysCode.Poke7.Models;
+using RestSharp;
 using System.Text.Json;
-using Pokemon7DaysCode.Poke7.Models;
 
-namespace Pokemon7DaysCode.Menus
+namespace Pokemon7DaysCode.Poke7.Menus
 {
     internal class ChoosePoke7Menu : Menu
     {
+
         public ChoosePoke7Menu()
         {
             this.Title = @"
-█▀▄▀█ █▀▀ █░█   █▀█ █▀█ █▄▀ █▀▀ ▀▀█
-█░▀░█ ██▄ █▄█   █▀▀ █▄█ █░█ ██▄ ░░█
+███████████████████████████████████████████████████████████████████████████████
+██▀▄─██▄─▄▄▀█─▄▄─█─▄▄▄─██▀▄─██─▄▄─███▄─▄▄▀█▄─▄▄─███▄─▄▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄▄▄░█
+██─▀─███─██─█─██─█─███▀██─▀─██─██─████─██─██─▄█▀████─▄▄▄█─██─██─▄▀███─▄█▀███░██
+▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▀▀▀▄▄▄▄▀▀▄▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▀▄██▀
 ";
         }
-        public ChoosePoke7Menu(string title, string subTitle) : base(title, subTitle)
+        public ChoosePoke7Menu(User userLogged) : base(userLogged)
         {
+            this.Title = @"
+███████████████████████████████████████████████████████████████████████████████
+██▀▄─██▄─▄▄▀█─▄▄─█─▄▄▄─██▀▄─██─▄▄─███▄─▄▄▀█▄─▄▄─███▄─▄▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄▄▄░█
+██─▀─███─██─█─██─█─███▀██─▀─██─██─████─██─██─▄█▀████─▄▄▄█─██─██─▄▀███─▄█▀███░██
+▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▀▀▀▄▄▄▄▀▀▄▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▀▄██▀
+";
         }
-
-        public override void ShowMenu()
-        {
-            base.ShowMenu();
-        }
+        public ChoosePoke7Menu(string title, string subTitle) : base(title, subTitle) { }
 
         public override void MenuFunc()
         {
             Console.WriteLine("=============================");
-            Console.WriteLine("Selecione seu poke7:");
+            Console.WriteLine("Selecione um poke7:");
             Console.WriteLine("=============================");
             Console.WriteLine("1) Bulbasaur");
             Console.WriteLine("2) Charmander");
@@ -66,13 +71,9 @@ namespace Pokemon7DaysCode.Menus
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         var myPoke7 = JsonSerializer.Deserialize<Poke7.Models.Poke7>(response.Content!);
-
-                        Console.WriteLine($"\nNome do poke7: {myPoke7!.Name}");
-                        Console.WriteLine("\nHabilidades:");
-                        foreach (var ability in myPoke7.Abilities!)
-                        {
-                            Console.WriteLine($"- {ability.abilityDetails.Name}");
-                        }
+                        Poke7ActionsMenu poke7ActionsMenu = new(this.UserLogged!, myPoke7!);
+                       
+                        poke7ActionsMenu.MenuFunc();
                     }
                     else
                     {

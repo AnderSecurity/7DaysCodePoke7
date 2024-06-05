@@ -1,12 +1,19 @@
-﻿namespace Pokemon7DaysCode.Menus
+﻿using Pokemon7DaysCode.Poke7.Models;
+
+namespace Pokemon7DaysCode.Poke7.Menus
 {
     internal abstract class Menu:IMenu
     {
-        public string Title { get; set; }
-        public string SubTitle { get; set; }
+        public string? Title { get; set; }
+        public string? SubTitle { get; set; }
+        public User? UserLogged { get; set; }
 
         public Menu()
         {
+        }
+        public Menu(User userLogged)
+        {
+            UserLogged = userLogged;
         }
 
         public Menu(string title, string subTitle)

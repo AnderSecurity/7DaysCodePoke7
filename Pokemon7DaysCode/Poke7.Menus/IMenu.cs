@@ -1,4 +1,6 @@
-﻿namespace Pokemon7DaysCode.Menus
+﻿using Pokemon7DaysCode.Poke7.Models;
+
+namespace Pokemon7DaysCode.Poke7.Menus
 {
     internal interface IMenu
     {
