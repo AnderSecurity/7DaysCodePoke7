@@ -1,4 +1,6 @@
-﻿namespace Pokemon7DaysCode.Poke7.Menus
+﻿using Pokemon7DaysCode.Poke7.Models;
+
+namespace Pokemon7DaysCode.Poke7.Menus
 {
     internal class MainMenu : Menu
     {
@@ -17,6 +19,20 @@
         }
         public MainMenu(string title, string subTitle) : base(title, subTitle)
         {
+        }
+
+        public MainMenu(User user)
+        {
+            this.Title = @"
+██████╗░░█████╗░██╗░░██╗███████╗███████╗
+██╔══██╗██╔══██╗██║░██╔╝██╔════╝╚════██║
+██████╔╝██║░░██║█████═╝░█████╗░░░░░░██╔╝
+██╔═══╝░██║░░██║██╔═██╗░██╔══╝░░░░░██╔╝░
+██║░░░░░╚█████╔╝██║░╚██╗███████╗░░██╔╝░░
+╚═╝░░░░░░╚════╝░╚═╝░░╚═╝╚══════╝░░╚═╝░░░
+            ";
+            this.SubTitle = "Seu poke7 de estimação!";
+            this.UserLogged = user;
         }
 
         public override void MenuFunc()
