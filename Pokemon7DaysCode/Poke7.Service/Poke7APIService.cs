@@ -12,7 +12,18 @@ namespace Pokemon7DaysCode.Poke7.Service
 {
     internal class Poke7APIService
     {
-        public Models.Poke7 GetPoke7ByAPI(char apiOption)
+        public List<Poke7Data> GetAllPoke7()
+        {
+            var client = new RestClient("https://pokeapi.co/api/v2/pokemon-species/");
+            var request = new RestRequest("", Method.Get);
+            var response = client.Execute(request);
+
+            var pokemonEspeciesResposta = JsonSerializer.Deserialize<Poke7DataResult>(response.Content!);
+
+            return pokemonEspeciesResposta.Results;
+        }
+
+        public Models.Poke7 GetPoke7ByAPIOption(int apiOption)
         {
             Models.Poke7 myPoke7 = new();
 

@@ -26,10 +26,10 @@ namespace Pokemon7DaysCode.Poke7.View
             }
         }
 
-        public char ChooseOption()
+        public int ChooseOption()
         {
             Console.Write("\nNúmero da opção desejada: ");
-            return char.Parse(Console.ReadLine()!);
+            return int.Parse(Console.ReadLine()!);
         }
 
         public void MainMenu(User user)
@@ -61,7 +61,7 @@ namespace Pokemon7DaysCode.Poke7.View
             }           
         }
 
-        public void ChoosePoke7Menu(User user)
+        public void ChoosePoke7Menu(User user, List<Poke7Data> poke7Avaible)
         {
             try
             {
@@ -74,11 +74,13 @@ namespace Pokemon7DaysCode.Poke7.View
                 Console.WriteLine(title);
 
                 Console.WriteLine("=============================");
-                Console.WriteLine("Selecione um poke7:");
+                Console.WriteLine($"{user.Name}, selecione um poke7:");
                 Console.WriteLine("=============================");
-                Console.WriteLine("1) Bulbasaur");
-                Console.WriteLine("2) Charmander");
-                Console.WriteLine("3) Squirtle");
+
+                for(int i = 0; i < poke7Avaible.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}) {poke7Avaible[i].Name}");
+                }
             }
             catch(Exception ex)
             {
