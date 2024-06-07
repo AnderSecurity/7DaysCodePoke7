@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pokemon7DaysCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6648d7e8216f22c861045ded0fa3cabcc8f8b8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53bba935474fb47c2b29786e24936a8c4bebdd64")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pokemon7DaysCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pokemon7DaysCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
