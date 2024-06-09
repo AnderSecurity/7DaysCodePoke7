@@ -51,7 +51,7 @@ namespace Pokemon7DaysCode.Poke7.View
                 Console.WriteLine("\nSelecione uma das opções abaixo: ");
                 Console.WriteLine("=============================");
                 Console.WriteLine("1) Adotar um poke7");
-                Console.WriteLine("2) Ver meus mascotes");
+                Console.WriteLine("2) Meus mascotes");
                 Console.WriteLine("3) Sair");
                 Console.WriteLine("=============================");
             }
@@ -117,22 +117,122 @@ namespace Pokemon7DaysCode.Poke7.View
 ";
             Console.WriteLine(title);
 
-            if (!user.poke7List.Any())
+            if (!user.Poke7List!.Any())
             {
                 Console.WriteLine("Você não possui nenhum poke7 ainda :(");
+
+                Console.WriteLine();
+                Console.WriteLine("Pressione uma tecla para continuar...");
+                Console.ReadKey();
             }
             else
             {
-                foreach (var poke7 in user.poke7List.ToList())
+                Console.WriteLine("Mascote selecionado: " + (user.SelectedPoke7 is not null ? user.SelectedPoke7.Name:"Nenhum ainda :("));
+                Console.WriteLine("=======================");
+
+                foreach (var poke7 in user.Poke7List!.ToList())
                 {
-                    Console.WriteLine("=======================");
+                    Console.WriteLine();
                     Console.WriteLine($"{poke7}");
+                    poke7.ShowStatus();
                     Console.WriteLine("=======================");
                 }
-            }
 
+                Console.WriteLine("\nO que deseja fazer?\n");
+                Console.WriteLine("1) Selecionar um Poke7");
+                Console.WriteLine("2) Interagir com meu Poke7 selecionado");
+                Console.WriteLine("3) Voltar");
+            }           
+        }
+
+        public void ChooseMyPoke7(User user)
+        {           
+            Console.WriteLine(@"
+██████████████████████████████████████████████████████████████████████████████████████████
+█─▄▄▄▄█▄─▄▄─█▄─▄███▄─▄▄─█─▄▄▄─█▄─▄█─▄▄─█▄─▀█▄─▄██▀▄─██▄─▄▄▀███▄─▄▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄▄▄░█
+█▄▄▄▄─██─▄█▀██─██▀██─▄█▀█─███▀██─██─██─██─█▄▀─███─▀─███─▄─▄████─▄▄▄█─██─██─▄▀███─▄█▀███░██
+▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▄▀▄▄▄▀▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄▀▀▀▄▄▄▀▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▀▄██▀
+");
             Console.WriteLine();
-            Console.WriteLine("Pressione uma tecla para continuar...");
+
+            for (int i = 0; i<user.Poke7List!.Count; i++)
+            {
+                Console.WriteLine($"{i+1}) {user.Poke7List[i].Name}");
+            }
+            Console.WriteLine("\nQual pokemon você deseja escolher?");
+        }
+
+        public void ActWithMySelectedPoke7(User user)
+        {
+            Console.WriteLine(@"
+█████████████████████████████████████████▀███████████
+█▄─▄█▄─▀█▄─▄█─▄─▄─█▄─▄▄─█▄─▄▄▀██▀▄─██─▄▄▄▄█▄─▄█▄─▄▄▀█
+██─███─█▄▀─████─████─▄█▀██─▄─▄██─▀─██─██▄─██─███─▄─▄█
+▀▄▄▄▀▄▄▄▀▀▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▀▄▄▀
+");
+            Console.WriteLine();
+
+            Console.WriteLine("===================");
+            Console.WriteLine($"{user.Name}, o que deseja fazer?");
+            Console.WriteLine("===================");
+
+            Console.WriteLine($"1) Brincar com o {user.SelectedPoke7!.Name}");
+            Console.WriteLine($"2) Alimentar o {user.SelectedPoke7!.Name}");
+            Console.WriteLine($"3) Fazer o {user.SelectedPoke7!.Name} dormir");
+            Console.WriteLine($"4) Voltar");
+        }
+
+        public void AfterPlay(User user)
+        {
+            Console.WriteLine(@"
+████████████████████████████████████████████████████████
+█▄─▄─▀█▄─▄▄▀█▄─▄█▄─▀█▄─▄█─▄▄▄─██▀▄─██▄─▀█▄─▄█▄─▄▄▀█─▄▄─█
+██─▄─▀██─▄─▄██─███─█▄▀─██─███▀██─▀─███─█▄▀─███─██─█─██─█
+▀▄▄▄▄▀▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀
+");
+            Console.WriteLine($"Brincando com o {user.SelectedPoke7!.Name}...");
+            Thread.Sleep(3000);
+
+            Console.WriteLine($"\nEbaaa! Agora o {user.SelectedPoke7.Name} está assim:");
+            user.SelectedPoke7.ShowStatus();
+
+            Console.WriteLine("\nPressione uma tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        public void AfterEat(User user)
+        {
+            Console.WriteLine(@"
+██████████████████████████████████████████████████████████████████████
+██▀▄─██▄─▄███▄─▄█▄─▀█▀─▄█▄─▄▄─█▄─▀█▄─▄█─▄─▄─██▀▄─██▄─▀█▄─▄█▄─▄▄▀█─▄▄─█
+██─▀─███─██▀██─███─█▄█─███─▄█▀██─█▄▀─████─████─▀─███─█▄▀─███─██─█─██─█
+▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▄▄▄▀▀▄▄▀▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀
+");
+            Console.WriteLine($"Alimentando o {user.SelectedPoke7!.Name}...");
+            Thread.Sleep(3000);
+
+            Console.WriteLine($"\nEbaaa! Agora o {user.SelectedPoke7.Name} está assim:");
+            user.SelectedPoke7.ShowStatus();
+
+            Console.WriteLine("\nPressione uma tecla para continuar...");
+            Console.ReadKey();
+        }
+
+        public void AfterSleep(User user)
+        {
+            Console.WriteLine(@"
+█████████████████████████████████████████████████████████████
+█▄─▄█▄─▀█▄─▄█▄─▄▄▀█─▄▄─███▄─▄▄▀█─▄▄─█▄─▄▄▀█▄─▀█▀─▄█▄─▄█▄─▄▄▀█
+██─███─█▄▀─███─██─█─██─████─██─█─██─██─▄─▄██─█▄█─███─███─▄─▄█
+▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▀▀▄▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▀▄▄▀
+");
+            Console.WriteLine($"Colocando o {user.SelectedPoke7!.Name} para dormir...");
+            Thread.Sleep(3000);
+
+            Console.WriteLine($"\nEbaaa! Agora o {user.SelectedPoke7.Name} está assim:");
+            user.SelectedPoke7.ShowStatus();
+
+            Console.WriteLine("\nPressione uma tecla para continuar...");
             Console.ReadKey();
         }
 

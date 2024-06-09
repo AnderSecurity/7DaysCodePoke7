@@ -53,6 +53,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[111.2.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

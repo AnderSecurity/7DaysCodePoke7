@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|c:\\users\\andersecurity\\desktop\\-\\anderson\\projetos\\alura\\pokemon7dayscode\\pokemon7dayscode\\poke7.view\\poke7view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|solutionrelative:pokemon7dayscode\\poke7.view\\poke7view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|c:\\users\\andersecurity\\desktop\\-\\anderson\\projetos\\alura\\pokemon7dayscode\\pokemon7dayscode\\poke7.controller\\poke7controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF121F3-F327-44B2-BB20-E022E6ECD20A}|Pokemon7DaysCode\\Pokemon7DaysCode.csproj|solutionrelative:pokemon7dayscode\\poke7.controller\\poke7controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,14 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Poke7View.cs",
+              "DocumentMoniker": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.View\\Poke7View.cs",
+              "RelativeDocumentMoniker": "Pokemon7DaysCode\\Poke7.View\\Poke7View.cs",
+              "ToolTip": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.View\\Poke7View.cs",
+              "RelativeToolTip": "Pokemon7DaysCode\\Poke7.View\\Poke7View.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAYwN4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T19:31:29.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Poke7Controller.cs",
               "DocumentMoniker": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.Controller\\Poke7Controller.cs",
               "RelativeDocumentMoniker": "Pokemon7DaysCode\\Poke7.Controller\\Poke7Controller.cs",
               "ToolTip": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Poke7.Controller\\Poke7Controller.cs",
               "RelativeToolTip": "Pokemon7DaysCode\\Poke7.Controller\\Poke7Controller.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAALEAAAANAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAywOEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T21:42:50.319Z",
+              "WhenOpened": "2024-06-08T20:05:51.12Z",
               "EditorCaption": ""
             }
           ]

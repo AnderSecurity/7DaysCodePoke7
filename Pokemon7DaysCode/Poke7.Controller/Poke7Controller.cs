@@ -184,6 +184,99 @@ namespace Pokemon7DaysCode.Poke7.Controller
         {
             Console.Clear();
             View!.MyPoke7Menu(this.User!);
+
+            if (User!.Poke7List!.Any())
+            {
+                int choice = this.GetChoiceMyPoke7();
+                switch (choice)
+                {
+                    case 1:
+                        this.ChooseMyPoke7();
+                        break;
+
+                    case 2:
+                        this.ActWithMySelectedPoke7();
+                        break;
+
+                    case 3:
+                        return;
+                }
+            }
+        }
+
+        private void ChooseMyPoke7()
+        {
+            try
+            {
+                Console.Clear();
+                View!.ChooseMyPoke7(this.User!);
+                int choice = View.ChooseOption() - 1;
+
+                this.User!.SelectedPoke7 = User.Poke7List![choice];
+                Console.WriteLine($"Pokemon {this.User.SelectedPoke7.Name} selecionado com sucesso!");
+                Thread.Sleep(2000);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
+        }
+
+        private void ActWithMySelectedPoke7()
+        {
+            try
+            {
+                if (User!.SelectedPoke7 != null)
+                {
+                    Console.Clear();
+                    View!.ActWithMySelectedPoke7(this.User!);
+                    int choice = View!.ChooseOption();
+
+                    switch (choice)
+                    {
+                        case 1:
+                            Console.Clear();
+                            User!.SelectedPoke7!.Play();
+                            View.AfterPlay(this.User);
+                            break;
+
+                        case 2:
+                            Console.Clear();
+                            User!.SelectedPoke7!.Eat();
+                            View.AfterEat(this.User);
+                            break;
+
+                        case 3:
+                            Console.Clear();
+                            User!.SelectedPoke7!.Nap();
+                            View.AfterSleep(this.User);
+                            break;
+
+                        case 4:
+                            break;
+
+                        default:
+                            Console.WriteLine("Opção inválida!");
+                            break;
+                    }
+                }
+                else
+                {
+                    throw new Exception("\nNão é possível interagir com um poke7 vazio! Selecione um antes de continuar!");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Pressione uma tecla para continuar...");
+                Console.ReadKey();
+            }
+        }
+
+        private int GetChoiceMyPoke7()
+        {            
+            return View!.ChooseOption();
         }
 
         private int ShowPoke7ActionsMenu(Models.Poke7 myPoke7)
@@ -202,7 +295,7 @@ namespace Pokemon7DaysCode.Poke7.Controller
         private void AdoptPoke7(Models.Poke7 myPoke7)
         {
             Console.Clear();
-            this.User!.poke7List.Add(myPoke7!);
+            this.User!.Poke7List!.Add(myPoke7!);
             View!.AdoptPoke7(this.User, myPoke7!);
         }
     }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "b4NOFry6P+gqNB3etgM9Gjc4J8+qoDwKzuX5x1WUF7Bn0mPC52C6n/0D9aQJ1/N55LwMU7ude61U1DxqKSPeJg==",
+  "dgSpecHash": "0zoydzMosa5ysGjxJ+yTYtoY07STwiHLdOItZ1C/08RaMblgXBy40Yp2BY1sKwpgrKE++rN8eFEsXaNooX0mkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\AnderSecurity\\Desktop\\-\\Anderson\\Projetos\\Alura\\Pokemon7DaysCode\\Pokemon7DaysCode\\Pokemon7DaysCode.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AnderSecurity\\.nuget\\packages\\restsharp\\111.2.0\\restsharp.111.2.0.nupkg.sha512"
+    "C:\\Users\\AnderSecurity\\.nuget\\packages\\restsharp\\111.2.0\\restsharp.111.2.0.nupkg.sha512",
+    "C:\\Users\\AnderSecurity\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
